@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--    HW Assignment 3
+        File: index.html
+        Joshua Sullivan, Joshua_Sullivan1@student.uml.edu
+        10/26/2021   
+        This webpage generates a multipliction table from four values given by the user
+-->
+<html lang="en">
+    <head>
+        <title>Multiplication Table</title>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Multiplier, Multiplicand">
+        <meta name="author" content="Joshua Sullivan">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <!--Page Title-->
+                <h1>Multiplication Table Generator</h1>
+            </header>
+            
+            <div id="content">
+                <!--Form for multiplier input-->
+                <h2 id= "hor_title">Multiplier (Column)</h2>            
+                <form id="horizon">
+                    <label for="f_hnum">Starting number:</label><br>
+                    <input type="number" id="f_hnum" name="f_hnum"><br>
+                    <label for="l_hnum">Ending number:</label><br>
+                    <input type="number" id="l_hnum" name="l_hnum">
+                </form>
+                
+                <!--Form for multiplicand input-->
+                <h2 id="ver_title">Multiplicand (Row)</h2>            
+                <form id="vert">
+                    <label for="f_vnum">Starting number:</label><br>
+                    <input type="number" id="f_vnum" name="f_vnum"><br>
+                    <label for="l_vnum">Ending number:</label><br>
+                    <input type="number" id="l_vnum" name="l_vnum">
+                </form>
+
+                <br>
+                
+                <!--Paragraph for error notification from table.js if necessary-->
+                <p id='notif'></p>
+                
+                <button onclick="table('mult_table')">Submit</button>
+                
+                <!--Multiplication table generated in table.js placed here-->
+                <div id = "scrollbox">
+                    <table id="mult_table"></table>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="js/table.js"></script>
+
+</html>
