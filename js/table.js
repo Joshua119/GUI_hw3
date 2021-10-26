@@ -1,3 +1,10 @@
+/*    HW Assignment 3
+        File: table.js
+        Joshua Sullivan, Joshua_Sullivan1@student.uml.edu
+        10/26/2021   
+        This javascript file builds the multicplication table for the file index.html
+*/
+
 function table(id) {
 
     //Gets the entered numbers from the forms
@@ -5,11 +12,6 @@ function table(id) {
     var l_hnum = parseInt(document.getElementById("l_hnum").value)
     var f_vnum = parseInt(document.getElementById("f_vnum").value)
     var l_vnum = parseInt(document.getElementById("l_vnum").value)
-
-//    var f_hnum = 0;
-//    var l_hnum = 100;
-//    var f_vnum = 5;
-//    var l_vnum = 105;
 
     //Erases previous Table
     if (document.getElementById(id)) { 
